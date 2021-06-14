@@ -24,9 +24,31 @@
     <script src="https://kit.fontawesome.com/5714f456ab.js" crossorigin="anonymous"></script>    
 </head>
 <body>
-    <img src="rabiscoFrameV0.jpeg" alt="RabiscoFrameV0">
+    <div id='container'>
+        <h1>Conversor de Câmbio</h1>
 
-
+        <div id='fromForm' class='formContainer'> 
+            <p id='fromName'></p>
+            <p id='errorMessage'>A entrada deve ser um número.</p>
+            <form class='info'>
+                <select class='currencySelector' id='fromCurrency'></select>
+                <input type='text' id='fromValue' maxlength="9" class='valueInput'>
+            </form>
+        </div>
+    
+        <button id='swapButton'>Trocar
+        </button>
+    
+        <div id='toForm' class='formContainer'> 
+            <p id='toName'></p>
+            <form class='info'>
+                <select class='currencySelector' id='toCurrency'></select>
+                <input type='text' id='toValue' class='valueInput' disabled>
+            </form>
+            
+        </div>
+    </div>
+        
     
 </body>
 </html>
