@@ -1,75 +1,17 @@
 @charset "UTF-8";
 
-body{
 
+.main-container {
+    padding: 5% 10%;
+    border: 2px solid #eee;
+    box-shadow: 1px 1px 2px rgb(160, 140, 140);
+    margin: 10%;
+    
 }
 
-#container{
-    width: 100vw;
-    height: 80vh;
+#title {
+    font-size: 3rem;
+    top: 0px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-
-
-#swapButton {
-    padding:1px;
-    font-size: 1.5em;
-    background-color:#0d0630;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    border: color #e2e2e2;
-    color:white
-}
-
-#swapButton:hover {
-    border-color: #0d0630;
-}
-
-#swapButton:active {
-    background-color:#0d063098;
-}
-
-
-#errorMessage{
-    display: none;
-    padding:0.5em;
-    font-size: 1em;
-    font-weight: 700;
-    background-color:#ec1c24;
-    margin-bottom: 16px;
-    margin-top: 0px;
-    color:white
-}
-
-
-.valueInput{
-    border-style: inset;
-    border-color: #e2e2e2;
-    border-width: 1px;
-    outline:0px;
-    width: 100%;
-    font-size:2em;
-    width: 100%;
-    background-color: #e2e2e2;
-}
-
-.formContainer{
-    width: 400px;
-    text-align: left;
-    background-color: #0d0630;
-    margin-top:1px;
-    margin-bottom:1px;
-    padding:3px;
-}
-
