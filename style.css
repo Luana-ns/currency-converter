@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+.main-container {
+    padding: 5% 10%;
+    border: 2px solid #eee;
+    box-shadow: 1px 1px 2px rgb(160, 140, 140);
+    margin: 10%;
+    
+}
+
+#title {
+    font-size: 3rem;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
