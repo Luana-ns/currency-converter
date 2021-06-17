@@ -35,18 +35,18 @@
                             <div class="row justify-content-between">
                                 <div class="col-4">
                                     <form class="form-inline">
-                                        <label class="text-center my-1 mr-2" for="formGroupExampleInput">Moeda de Entrada</label>                            
+                                        <label class="text-center my-2 mr-1" for="formGroupExampleInput">Moeda de Entrada</label>                            
                                         <div class="card" style="width: 15rem; height: 2rem;">
                                           
                                         </div>   
                                     </form> 
                                 </div>
-                                <div class="col-xs my-3 text-center">
+                                <div class="col-xs my-4 text-center">
                                     <img class="icon" src="setas.png" width="35rem" alt="icone-Troca">
                                 </div>
                                 <div class="col-4">
                                     <form class="form-inline">
-                                        <label class="text-center my-1 mr-2" for="inlineFormCustomSelectPref"> Moeda de Saída </label>
+                                        <label class="text-center my-2 mr-1" for="inlineFormCustomSelectPref"> Moeda de Saída </label>
                                         <div class="card" style="width: 15rem; height: 2rem;">
                                             
                                         </div>  
@@ -57,14 +57,16 @@
                         <div class="flex-container">
                             <div class="row form-group">
                               <div class="col-auto mr-auto">
-                                <label for="formGroupExampleInput"> Digite o valor  </label>
+                                <label class="text-center my-2 mr-1" for="formGroupExampleInput"> Digite o valor  </label>
                                 <input type="text" class="form-control" id="input-value" placeholder="Example input" >
                               </div>
                               <div class="col-auto">
-                                <label for="formGroupExampleInput">Resultado</label>
+                                <label class="text-center my-2 mr-1" for="formGroupExampleInput">Resultado</label>
                                 <input type="text" class="form-control" id="value" placeholder="Example input" >
                               </div>
-                            </div>
+                            </div><button onclick="onClickConverter()" type="button" class="btn btn-outline-secondary">Converter</button>
+                            <br><div id="converted-value"></div></div><br>
+
                         </div>
                     </div>
                 </div>
