@@ -1,11 +1,13 @@
-@charset "UTF-8";
-
+body {
+    background-image: linear-gradient(to right, #e2e2e238, #fff);
+}
 
 .main-container {
     padding: 5% 10%;
     border: 2px solid #eee;
     box-shadow: 1px 1px 2px rgb(160, 140, 140);
-    margin: 10%;   
+    margin: 10%;  
+    background-color: #fff; 
 }
 
 #title {
@@ -18,5 +20,10 @@
 
 .box {
     text-align:center;
+}
+
+.btn-primary:hover {
+    background-color: #0d0630;
+    
 }
 
