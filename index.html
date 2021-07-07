@@ -25,13 +25,13 @@
 <body class="corpo d-flex flex-column align-items-center">
     <main>
         <div class="main-container">
-            <header  class="header-container-top">
+            <header  class="header-container-top mb-5">
                 <h1 id='title' class="display-1 text-center my-6">Conversor de Câmbio</h1>
             </header>
             <div >
                 <div class="box"> 
                     <div >
-                        <div class="flex-container">
+                        <div class="flex-container mb-5">
                             <div class="row justify-content-between">
                                 <div class="col-4">
                                     <form class="form-inline">
@@ -44,7 +44,7 @@
                                     </form> 
                                 </div>
                                 <div class="col-xs my-4 text-center">
-                                    <img class="icon" src="setas.png" width="35rem" alt="icone-Troca">
+                                    <img onclick="onClickSwap()" href="#" class="icon" src="setas.png" width="35rem" alt="icone-Troca">
                                 </div>
                                 <div class="col-4">
                                     <form class="form-inline">
@@ -58,17 +58,17 @@
                                 </div>
                             </div>
                         </div>     
-                        <div class="flex-container">
+                        <div class="flex-container mb-4">
                             <div class="row form-group">
-                              <div class="col-auto mr-auto">
+                              <div class="col-4 mr-auto mb-4">
                                 <label class="text-center my-2 mr-1" for="formGroupExampleInput"> Digite o valor  </label>
                                 <input type="number" style="text-align: center;" class="form-control" id="input-value" placeholder="Insira o valor" >
                               </div>
-                              <div class="col-auto">
+                              <div class="col-4 col-auto">
                                 <label class="text-center my-2 mr-1" for="formGroupExampleInput">Resultado</label>
                                 <input type="number" style="text-align: center;" class="form-control" id="converted-value" disabled >
                               </div>
-                            </div><button onclick="onClickConverter()" type="button" class="btn btn-outline-secondary">Converter</button>
+                            </div><button onclick="onClickConverter()" type="button" class="btn btn-primary">Converter</button>
                             
 
                         </div>
