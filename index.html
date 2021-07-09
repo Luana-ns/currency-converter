@@ -44,7 +44,7 @@
                                     </form> 
                                 </div>
                                 <div class="col-xs my-4 text-center">
-                                    <img onclick="onClickSwap()" href="#" class="icon" src="setas.png" width="35rem" alt="icone-Troca">
+                                    <img onclick="onClickSwap()" href="#" id='swapButton' class="icon" src="setas.png" width="35rem" alt="icone-Troca">
                                 </div>
                                 <div class="col-4">
                                     <form class="form-inline">
@@ -66,7 +66,7 @@
                               </div>
                               <div class="col-4 col-auto">
                                 <label class="text-center my-2 mr-1" for="formGroupExampleInput">Resultado</label>
-                                <input type="number" style="text-align: center;" class="form-control" id="converted-value" disabled >
+                                <input type="number" style="text-align: center;" class="form-control" id="converted-value" readonly >
                               </div>
                             </div><button onclick="onClickConverter()" type="button" class="btn btn-primary">Converter</button>
                             
