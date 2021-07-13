@@ -27,16 +27,16 @@
     <main>
         <div class="main-container">
             <header  class="header-container-top">
-                <h1 id='title' class="display-1 text-center my-6">Conversor de Câmbio</h1>
+                <h1 id='title' class="display-1 text-center my-3 mb-5">Conversor de Câmbio</h1>
             </header>
             <div >
                 <div class="box"> 
                     <div >
                         <div class="flex-container">
                             <div class="row justify-content-between">
-                                <div class="col-4">
+                                <div class="col-4 mb-5">
                                     <form class="form-inline">
-                                        <label class="text-center my-6 mr-2" for="formGroupExampleInput">Moeda de Entrada</label>                            
+                                        <label class="text-center mr-sm-2" for="formGroupExampleInput">Moeda de Entrada</label>                            
                                         <div id="entrada" class="card" style="width: 15rem; height: 2rem;">
                                             <h5 class="card-header-tabs" style="color: #0d0630;";>
                                                 Dolar
@@ -49,7 +49,7 @@
                                 </div>
                                 <div class="col-4">
                                     <form class="form-inline">
-                                        <label class="text-center my-6 mr-4" for="inlineFormCustomSelectPref"> Moeda de Saída </label>
+                                        <label class="text-center mr-sm-2" for="inlineFormCustomSelectPref"> Moeda de Saída </label>
                                         <div id="saida" class="card" style="width: 15rem; height: 2rem;">
                                             <h5 class="card-header-tabs" style="color: #0d0630;">
                                                 Real
@@ -62,15 +62,15 @@
                         <div class="flex-container">
                             <div class="row form-group">
                               <div class="col-4 mr-auto">
-                                <label class="text-center my-6 mr-4" for="formGroupExampleInput"> Digite o valor  </label>
+                                <label class="text-center  mr-sm-2" for="formGroupExampleInput"> Digite o valor  </label>
                                 <input type="number" style="text-align: center;" class="form-control" id="input-value" placeholder="Insira o valor" >
                               </div>
                               <div class="col-4 mr-right-auto">
-                                <label class="text-center my-6 mr-4" for="formGroupExampleInput">Resultado</label>
+                                <label class="text-center mr-sm-2" for="formGroupExampleInput">Resultado</label>
                                 <input type="number" style="text-align: center;" class="form-control" id="converted-value" readonly >
                               </div>
                             </div>
-                            <button type="button" class="btn btn-primary" onclick="onClickConverter()">Converter</button>
+                            <button type="button" class="btn btn-primary my-4" onclick="onClickConverter()">Converter</button>
                             
 
                         </div>
