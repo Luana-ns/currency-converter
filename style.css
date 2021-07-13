@@ -20,3 +20,6 @@
     text-align:center;
 }
 
+.btn:hover{
+    background-color: #0d0630;
+}
