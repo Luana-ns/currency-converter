@@ -63,7 +63,7 @@
                             <div class="row form-group">
                               <div class="col-4 mr-auto">
                                 <label class="text-center  mr-sm-2" for="formGroupExampleInput"> Digite o valor  </label>
-                                <input type="number" style="text-align: center;" class="form-control" id="input-value" placeholder="Insira o valor" >
+                                <input type="number" style="text-align: center;" class="form-control" id="input-value" placeholder="Insira o valor" min="0" onkeypress="return event.charCode >= 44 && event.charCode <= 57 //onkeypress para permitir somente números, exceto o 'e' ">
                               </div>
                               <div class="col-4 mr-right-auto">
                                 <label class="text-center mr-sm-2" for="formGroupExampleInput">Resultado</label>
