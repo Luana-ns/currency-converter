@@ -23,19 +23,20 @@
     <script src="https://kit.fontawesome.com/5714f456ab.js" crossorigin="anonymous"></script>    
 </head>
 <body class="corpo d-flex flex-column align-items-center">
+
     <main>
         <div class="main-container">
-            <header  class="header-container-top mb-5">
-                <h1 id='title' class="display-1 text-center my-6">Conversor de Câmbio</h1>
+            <header  class="header-container-top">
+                <h1 id='title' class="display-1 text-center my-3 mb-5">Conversor de Câmbio</h1>
             </header>
             <div >
                 <div class="box"> 
                     <div >
                         <div class="flex-container mb-5">
                             <div class="row justify-content-between">
-                                <div class="col-4">
+                                <div class="col-4 mb-5">
                                     <form class="form-inline">
-                                        <label class="text-center my-2 mr-1" for="formGroupExampleInput">Moeda de Entrada</label>                            
+                                        <label class="text-center mr-sm-2" for="formGroupExampleInput">Moeda de Entrada</label>                            
                                         <div id="entrada" class="card" style="width: 15rem; height: 2rem;">
                                             <h5 class="card-header-tabs" style="color: #0d0630;";>
                                                 Dolar
@@ -48,7 +49,7 @@
                                 </div>
                                 <div class="col-4">
                                     <form class="form-inline">
-                                        <label class="text-center my-2 mr-1" for="inlineFormCustomSelectPref"> Moeda de Saída </label>
+                                        <label class="text-center mr-sm-2" for="inlineFormCustomSelectPref"> Moeda de Saída </label>
                                         <div id="saida" class="card" style="width: 15rem; height: 2rem;">
                                             <h5 class="card-header-tabs" style="color: #0d0630;">
                                                 Real
@@ -60,15 +61,16 @@
                         </div>     
                         <div class="flex-container mb-4">
                             <div class="row form-group">
-                              <div class="col-4 mr-auto mb-4">
-                                <label class="text-center my-2 mr-1" for="formGroupExampleInput"> Digite o valor  </label>
-                                <input type="number" style="text-align: center;" class="form-control" id="input-value" placeholder="Insira o valor" >
+                              <div class="col-4 mr-auto">
+                                <label class="text-center  mr-sm-2" for="formGroupExampleInput"> Digite o valor  </label>
+                                <input type="number" style="text-align: center;" class="form-control" id="input-value" placeholder="Insira o valor" min="0" onkeypress="return event.charCode >= 44 && event.charCode <= 57 //onkeypress para permitir somente números, exceto o 'e' ">
                               </div>
-                              <div class="col-4 col-auto">
-                                <label class="text-center my-2 mr-1" for="formGroupExampleInput">Resultado</label>
-                                <input type="number" style="text-align: center;" class="form-control" id="converted-value" disabled >
+                              <div class="col-4 mr-right-auto">
+                                <label class="text-center mr-sm-2" for="formGroupExampleInput">Resultado</label>
+                                <input type="number" style="text-align: center;" class="form-control" id="converted-value" readonly >
                               </div>
-                            </div><button onclick="onClickConverter()" type="button" class="btn btn-primary">Converter</button>
+                            </div>
+                            <button type="button" class="btn btn-primary my-4" onclick="onClickConverter()">Converter</button>
                             
 
                         </div>
@@ -77,6 +79,6 @@
             </div>
         </div>
     </main>
-    <script src="index.js"></script>
+    <script src="js/script.js"> </script>
 </body>
 </html>
