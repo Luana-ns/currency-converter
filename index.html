@@ -28,11 +28,12 @@
         <div class="main-container">
             <header  class="header-container-top">
                 <h1 id='title' class="display-1 text-center my-3 mb-5">Conversor de Câmbio</h1>
+
             </header>
             <div >
                 <div class="box"> 
                     <div >
-                        <div class="flex-container">
+                        <div class="flex-container mb-5">
                             <div class="row justify-content-between">
                                 <div class="col-4 mb-5">
                                     <form class="form-inline">
@@ -45,7 +46,7 @@
                                     </form> 
                                 </div>
                                 <div class="col-xs my-4 text-center">
-                                    <img class="icon" src="setas.png" width="35rem" alt="icone-Troca">
+                                    <img onclick="onClickSwap()" href="#" id='swapButton' class="icon" src="setas.png" width="35rem" alt="icone-Troca">
                                 </div>
                                 <div class="col-4">
                                     <form class="form-inline">
@@ -59,8 +60,9 @@
                                 </div>
                             </div>
                         </div>     
-                        <div class="flex-container">
+                        <div class="flex-container mb-4">
                             <div class="row form-group">
+
                               <div class="col-4 mr-auto">
                                 <label class="text-center  mr-sm-2" for="formGroupExampleInput"> Digite o valor  </label>
                                 <input type="number" style="text-align: center;" class="form-control" id="input-value" placeholder="Insira o valor" min="0" onkeypress="return event.charCode >= 44 && event.charCode <= 57 //onkeypress para permitir somente números, exceto o 'e' ">
@@ -70,8 +72,7 @@
                                 <input type="number" style="text-align: center;" class="form-control" id="converted-value" readonly >
                               </div>
                             </div>
-                            <button type="button" class="btn btn-primary my-4" onclick="onClickConverter()">Converter</button>
-                            
+                            <button type="button" class="btn btn-primary my-4" onclick="onClickConverter()">Converter</button>                           
 
                         </div>
                     </div>
