@@ -1,12 +1,22 @@
 body {
     background-image: linear-gradient(to right, #e2e2e265, #fff);
-    
 }
 
 h1 {
     font-family: 'Quicksand', sans-serif;
     text-shadow: 1px 1px 2px #0d0630a8;
 }
+
+select{
+    font-size: 20rem;
+    background-color: #0d0630a8;
+    text-align:center;
+}
+
+option {
+    text-align:center;
+}
+
 .main-container {
     padding: 5% 10%;
     border: 2px solid #eee;
@@ -27,7 +37,6 @@ h1 {
     text-align:center;
 }
 
-
 .btn-primary:hover {
     background-color: #0d0630;   
 }
@@ -42,4 +51,5 @@ h1 {
     display: flex;   
     align-items: center;
     justify-content: center;
+    background-color: #0d0630;
 }
