@@ -1,12 +1,16 @@
-// const loadCurrencyOptions = () => {
-//     document.getElementById("entrada").innerHTML = generateHtmlOptions(
-//       "Dolar"
-//     );
-//     document.getElementById("saida").innerHTML = generateHtmlOptions(
-//       "Real"
-//     );
-// };
-//   loadCurrencyOptions();
+const moedas = {
+
+    Dólar: {
+        valor: 5.10,
+        type: 'USD'
+    },
+
+    Real: {
+        valor: 1.0,
+        type: 'BRL'
+    },
+
+}
 
 function onClickConverter() {
     
@@ -17,10 +21,11 @@ function onClickConverter() {
     convertedValue.value = (valueToConvert * 5.10).toFixed(2)
 };
 
-// function onClickSwap() {
-//     const entrada = document.getElementById('entrada');
-//     const saida = document.getElementById('saida');
-
-//     entrada = innerHtml(saida)
-//     saida = innerHtml(entrada)
-
+ function onClickSwap() {
+    const entrada = document.getElementById("moeda-entrada");
+    const saida = document.getElementById("moeda-saida");
+    var aux;
+    aux = entrada.value;
+    entrada.value = saida.value;
+    saida.value = aux; 
+ }
