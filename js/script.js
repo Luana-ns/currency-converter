@@ -1,6 +1,6 @@
-const moedas = {
+const moeda = {
 
-    Dólar: {
+    Dolar: {
         valor: 5.10,
         type: 'USD'
     },
@@ -10,22 +10,26 @@ const moedas = {
         type: 'BRL'
     },
 
-}
+};
 
-function onClickConverter() {
+function calculateCambio() {
     
     const valueToConvert = (document.getElementById("input-value")).value;
     const convertedValue = document.getElementById("converted-value");
+    const saida = document.getElementById("moeda-saida").value;
+    const entrada = document.getElementById("moeda-entrada").value;
+    const conversionRatio = moeda[entrada].valor / moeda[saida].valor;
     
-    
-    convertedValue.value = (valueToConvert * 5.10).toFixed(2)
+    convertedValue.value = (valueToConvert * conversionRatio).toFixed(2)
+
 };
 
- function onClickSwap() {
+ function invertedCurrency() {
     const entrada = document.getElementById("moeda-entrada");
     const saida = document.getElementById("moeda-saida");
-    var aux;
+    var aux;    
     aux = entrada.value;
     entrada.value = saida.value;
     saida.value = aux; 
- }
+    calculateCambio()
+ };
