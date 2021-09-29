@@ -39,22 +39,22 @@
                                         <label class="text-center mr-sm-2 my-2" for="formGroupExampleInput">Moeda de Entrada</label>                            
                                         <div id="entrada" class="card" style="width: 15rem; height: 2rem;">
                                             <select style="text-align: center;" class="form-control custom-select mb-3" id='moeda-entrada' >
-                                                <option style="text-align: center;" value="1">Dólar</option>  
-                                                <option style="text-align: center;" value="2">Real</option>                                        
+                                                <option style="text-align: center;" value="Dolar">Dólar</option>  
+                                                <option style="text-align: center;" value="Real">Real</option>                                        
                                             </select>    
                                         </div>   
                                     </form> 
                                 </div>
                                 <div class="col-xs my-4 text-center">
-                                    <img onclick="onClickSwap()" type="button" id="swapButton" class="icon" src="setas.png" width="35rem" alt="icone-Troca">
+                                    <img onclick="invertedCurrency()" type="button" id="swapButton" class="icon" src="setas.png" width="35rem" alt="icone-Troca">
                                 </div>
                                 <div class="col-4 mr-right-auto">
                                     <form class="form-inline">
                                         <label class="text-center mr-sm-2 my-2" for="formGroupExampleInput"> Moeda de Saída </label>
                                         <div class="card" id="saida" style="width: 15rem; height: 2rem;" >
                                             <select style="text-align: center;" class="form-control custom-select mb-3" id='moeda-saida' >
-                                                <option style="text-align: center;" value="2">Real</option>
-                                                <option style="text-align: center;" value="1">Dólar</option>                                        
+                                                <option style="text-align: center;" value="Real">Real</option>
+                                                <option style="text-align: center;" value="Dolar">Dólar</option>                                        
                                             </select>    
                                         </div>  
                                     </form>
@@ -72,7 +72,7 @@
                                 <input type="number" style="text-align: center;" class="form-control" id="converted-value" readonly >
                               </div>
                             </div>
-                            <button type="button" class="btn btn-primary my-4" onclick="onClickConverter()">Converter</button>
+                            <button type="button" class="btn btn-primary my-4" onclick="calculateCambio()">Converter</button>
                         </div>
                     </div>
                 </div>
